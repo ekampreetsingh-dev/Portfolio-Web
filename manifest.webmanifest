@@ -1,0 +1,51 @@
+{
+  "name": "TaskSphere \u2014 Focus & quests",
+  "short_name": "TaskSphere",
+  "description": "A focused, gamified workspace for daily quests.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#08090c",
+  "theme_color": "#08090c",
+  "icons": [
+    {
+      "src": "icon.svg?v=3",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable.svg?v=3",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Quick add quest",
+      "short_name": "Quick add",
+      "url": "./?action=quick-add",
+      "icons": [
+        {
+          "src": "icon.svg?v=3",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Focus room",
+      "short_name": "Focus",
+      "url": "./#focus",
+      "icons": [
+        {
+          "src": "icon.svg?v=3",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}
