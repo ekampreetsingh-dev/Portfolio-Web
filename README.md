@@ -1,5 +1,7 @@
 # Ekampreet Singh — portfolio
 
+A modern, responsive developer portfolio showcasing my expertise in full-stack web development, UI/UX design, React, TypeScript, Python, and AI automation. Explore my featured projects, technical skills, GitHub repositories, and contact details through a clean, interactive interface built with React, Vite, and Tailwind CSS.
+
 Static build of a React portfolio. The source lives in `src-app/`; the repository root holds the compiled output that Vercel serves.
 
 ## Rebuild
