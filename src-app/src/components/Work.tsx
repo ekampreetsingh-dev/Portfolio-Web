@@ -32,7 +32,7 @@ export function Work() {
         <SectionHead
           index="// 03"
           label="Selected work"
-          lede="One product, taken from an idea to a live app: accounts, cloud sync, an offline queue, four visual skins and a gamification loop that keeps score."
+          lede="One product, taken from an idea to a live app: accounts, cloud sync, an offline queue, five visual skins and a gamification loop that keeps score."
           aside={
             <div className="filters" aria-hidden="true">
               <span className="filter is-on">01 flagship</span>
@@ -52,7 +52,7 @@ export function Work() {
                     src="/images/tasksphere.webp"
                     width={1280}
                     height={800}
-                    alt="TaskSphere Workspace dashboard with campaign ledger, quest counts and focus metrics"
+                    alt="TaskSphere Workspace dashboard in the Brutalist Architect skin — campaign ledger, quest counts and focus metrics"
                     loading="lazy"
                     decoding="async"
                   />
@@ -69,12 +69,12 @@ export function Work() {
                 <p className="case-pitch">
                   A gamified productivity workspace where progress is visible: quests, focus rooms,
                   streaks and a dragon that keeps score. Built as a real product — accounts, cloud
-                  sync, an offline queue and four visual skins.
+                  sync, an offline queue and five visual skins.
                 </p>
                 <ul className="case-highlights">
                   <li>Realtime sync</li>
                   <li>Offline queue</li>
-                  <li>Four skins</li>
+                  <li>Five skins</li>
                 </ul>
                 <ul className="case-tags">
                   <li>React</li>
