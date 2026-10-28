@@ -2399,8 +2399,8 @@
 
   .wa-float {
     position: fixed;
-    right: 18px;
-    bottom: 18px;
+    right: max(22px, calc(env(safe-area-inset-right) + 16px));
+    bottom: max(26px, calc(env(safe-area-inset-bottom) + 22px));
     z-index: 55;
     display: none;
     place-items: center;
