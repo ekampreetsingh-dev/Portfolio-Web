@@ -133,4 +133,15 @@ export const FALLBACK_REPOS = [
     html_url: "https://github.com/ekampreetsingh-dev/Tasksphere-Workspace",
     homepage: "",
   },
+  {
+    id: 3,
+    name: "Portfolio-Web",
+    description:
+      "A modern, responsive developer portfolio built with React, Vite and Tailwind CSS — featured projects, skills, live GitHub data and contact.",
+    language: "TypeScript",
+    stargazers_count: 0,
+    updated_at: "2026-10-28T05:31:39Z",
+    html_url: "https://github.com/ekampreetsingh-dev/Portfolio-Web",
+    homepage: "",
+  },
 ];
