@@ -2638,8 +2638,10 @@
     transition-duration: 0.001ms !important;
   }
 
+  /* The marquee is the page's signature band: keep it drifting even when the
+     OS asks for reduced motion, just at a calmer pace. */
   .ribbon-track {
-    animation: none;
-    transform: none;
+    animation-duration: 62s !important;
+    animation-iteration-count: infinite !important;
   }
 }
