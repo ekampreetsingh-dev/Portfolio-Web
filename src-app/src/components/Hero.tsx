@@ -1,12 +1,10 @@
-import { useReducedMotion } from "motion/react";
 import { ArrowDown, ArrowUpRight, Atom, Database, Hexagon, Sparkles, Wind } from "lucide-react";
 import { ROLES } from "../data";
 import { useTypewriter } from "../lib/hooks";
 import { Asterisk, Reveal } from "./ui";
 
 export function Hero() {
-  const reduce = useReducedMotion();
-  const typed = useTypewriter(ROLES, !reduce);
+  const typed = useTypewriter(ROLES);
 
   return (
     <section className="hero" id="home">

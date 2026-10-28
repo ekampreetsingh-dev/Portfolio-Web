@@ -2638,10 +2638,15 @@
     transition-duration: 0.001ms !important;
   }
 
-  /* The marquee is the page's signature band: keep it drifting even when the
-     OS asks for reduced motion, just at a calmer pace. */
+  /* The marquee and the hero's typing caret are signature motion: keep them
+     alive even when the OS asks for reduced motion. */
   .ribbon-track {
     animation-duration: 62s !important;
+    animation-iteration-count: infinite !important;
+  }
+
+  .type-line .caret {
+    animation-duration: 1.05s !important;
     animation-iteration-count: infinite !important;
   }
 }

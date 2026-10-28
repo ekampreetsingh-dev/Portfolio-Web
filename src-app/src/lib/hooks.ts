@@ -32,16 +32,12 @@ export function useSpotlight() {
   }, []);
 }
 
-export function useTypewriter(words: string[], enabled: boolean) {
+export function useTypewriter(words: string[]) {
   const [text, setText] = useState(words[0] ?? "");
   const [index, setIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
-    if (!enabled) {
-      setText(words[0] ?? "");
-      return;
-    }
     const word = words[index % words.length];
 
     if (!deleting && text === word) {
@@ -60,7 +56,7 @@ export function useTypewriter(words: string[], enabled: boolean) {
       deleting ? 24 : 46 + Math.random() * 46,
     );
     return () => window.clearTimeout(timer);
-  }, [deleting, enabled, index, text, words]);
+  }, [deleting, index, text, words]);
 
   return text;
 }
