@@ -1,13 +1,8 @@
 import { useMemo, useState } from "react";
-import {
-  ArrowUpRight,
-  Clock,
-  RotateCcw,
-  Star,
-} from "lucide-react";
+import { ArrowUpRight, RotateCcw } from "lucide-react";
 import { CONTACT } from "../data";
 import type { Repo, RepoStatus } from "../lib/hooks";
-import { formatRelative, LANG_COLORS } from "../lib/hooks";
+import { LANG_COLORS } from "../lib/hooks";
 import { GithubMark, Reveal } from "./ui";
 
 export function GitHubLab({
@@ -123,14 +118,6 @@ export function GitHubLab({
                           aria-hidden="true"
                         />
                         {repo.language ?? "Code"}
-                      </span>
-                      <span>
-                        <Star size={11} aria-hidden="true" />
-                        {repo.stargazers_count}
-                      </span>
-                      <span>
-                        <Clock size={11} aria-hidden="true" />
-                        {formatRelative(repo.updated_at)}
                       </span>
                       <span style={{ marginLeft: "auto", color: "var(--color-volt)" }}>
                         <ArrowUpRight size={13} aria-hidden="true" />

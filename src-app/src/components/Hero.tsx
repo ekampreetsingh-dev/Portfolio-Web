@@ -125,8 +125,6 @@ export function Hero() {
                 </span>
               </div>
             </figure>
-
-            <span className="stage-tag">// ES — 2026</span>
           </Reveal>
         </div>
       </div>

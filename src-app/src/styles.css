@@ -1108,17 +1108,6 @@
     animation: spin 18s linear reverse infinite;
   }
 
-  .stage-tag {
-    position: absolute;
-    z-index: 3;
-    bottom: 2%;
-    right: 4%;
-    font-family: var(--font-mono);
-    font-size: 9.5px;
-    letter-spacing: 0.18em;
-    color: var(--color-faint);
-  }
-
   /* ---------- ribbon ---------- */
   .ribbon-wrap {
     position: relative;
