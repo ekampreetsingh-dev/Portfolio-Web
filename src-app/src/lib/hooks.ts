@@ -14,7 +14,7 @@ export type Repo = {
 
 export type RepoStatus = "loading" | "ready" | "offline";
 
-const HIDDEN_REPOS = new Set(["edutime-timetable-manager"]);
+const HIDDEN_REPOS = new Set(["edutime-timetable-manager", "portfolio-"]);
 
 export function useSpotlight() {
   useEffect(() => {

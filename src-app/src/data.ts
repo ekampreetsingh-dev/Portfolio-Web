@@ -125,16 +125,6 @@ export const FALLBACK_REPOS = [
   },
   {
     id: 2,
-    name: "Portfolio-",
-    description: "The portfolio you are reading — rebuilt in React, Vite and Tailwind.",
-    language: "HTML",
-    stargazers_count: 0,
-    updated_at: "2026-10-27T10:00:00Z",
-    html_url: "https://github.com/ekampreetsingh-dev/Portfolio-",
-    homepage: "https://portfolio-website-1811.vercel.app/",
-  },
-  {
-    id: 3,
     name: "Tasksphere-Workspace",
     description: "The original single-file TaskSphere build, kept for the archive.",
     language: "HTML",
