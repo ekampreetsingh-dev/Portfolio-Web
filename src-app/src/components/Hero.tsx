@@ -3,9 +3,23 @@ import { ROLES } from "../data";
 import { useTypewriter } from "../lib/hooks";
 import { Asterisk, Reveal } from "./ui";
 
-export function Hero() {
-  const typed = useTypewriter(ROLES);
+function TypedRole() {
+  const { text, typing } = useTypewriter(ROLES);
 
+  return (
+    <p className="type-line" aria-live="off">
+      <span className="prompt" aria-hidden="true">
+        &rsaquo;
+      </span>
+      <span>
+        {text}
+        <span className={typing ? "caret is-typing" : "caret"} aria-hidden="true" />
+      </span>
+    </p>
+  );
+}
+
+export function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-grid-bg" aria-hidden="true" />
@@ -27,13 +41,7 @@ export function Hero() {
             </Reveal>
 
             <Reveal delay={0.12}>
-              <p className="type-line" aria-live="off">
-                <span className="prompt" aria-hidden="true">
-                  &rsaquo;
-                </span>
-                <span>{typed}</span>
-                <span className="caret" aria-hidden="true" />
-              </p>
+              <TypedRole />
             </Reveal>
 
             <Reveal delay={0.18}>

@@ -33,7 +33,7 @@ export function useSpotlight() {
 }
 
 export function useTypewriter(words: string[]) {
-  const [text, setText] = useState(words[0] ?? "");
+  const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
 
@@ -41,7 +41,7 @@ export function useTypewriter(words: string[]) {
     const word = words[index % words.length];
 
     if (!deleting && text === word) {
-      const hold = window.setTimeout(() => setDeleting(true), 2100);
+      const hold = window.setTimeout(() => setDeleting(true), 2200);
       return () => window.clearTimeout(hold);
     }
 
@@ -53,12 +53,12 @@ export function useTypewriter(words: string[]) {
 
     const timer = window.setTimeout(
       () => setText(word.slice(0, text.length + (deleting ? -1 : 1))),
-      deleting ? 24 : 46 + Math.random() * 46,
+      deleting ? 22 : 52 + Math.random() * 46,
     );
     return () => window.clearTimeout(timer);
   }, [deleting, index, text, words]);
 
-  return text;
+  return { text, typing: deleting || text !== words[index % words.length] };
 }
 
 export function useCountUp(target: number, active: boolean, duration = 1250) {
